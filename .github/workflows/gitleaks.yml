@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: GiriRaj249/gitleaks-action
-        ref: v1
+        ref: main
         token: ${{ secrets.GIT_ACTION_TOKEN }}
     - name: Run Scans
       uses: ./
