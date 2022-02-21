@@ -14,3 +14,5 @@ jobs:
         repository: GiriRaj249/gitleaks-action
         ref: v1
         token: ${{ secrets.GIT_ACTION_TOKEN }}
+    - name: Run Scans
+      uses: ./
