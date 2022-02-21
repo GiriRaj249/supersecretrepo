@@ -12,7 +12,7 @@ jobs:
       uses: GiriRaj249/gitleaks-action@main
       with:
         repository: GiriRaj249/gitleaks-action
-        ref: master
+        ref: main
         token: ${{ secrets.GIT_ACTION_TOKEN }}
         
       
