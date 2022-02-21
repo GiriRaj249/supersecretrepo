@@ -9,7 +9,7 @@ jobs:
     - name: Code Checkout
       uses: actions/checkout@v2
     - name: Git Leaks
-      uses: zricethezav/gitleaks-action@v1.6.0
+      uses: GiriRaj249/gitleaks-action@v1
       with:
         token: ${{ secrets.GIT_ACTION_TOKEN }}
         config-path: .gitleaks.yml
