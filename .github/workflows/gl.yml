@@ -1,2 +1,12 @@
-- name: Gitleaks
-  uses: zricethezav/gitleaks-action@v1
+name: gitleaks
+
+on: [push,pull_request]
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Code Checkout
+      uses: actions/checkout@v2
+    - name: Git Leaks
+      uses: zricethezav/gitleaks-action@v1
