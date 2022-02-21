@@ -9,6 +9,6 @@ jobs:
     - name: Code Checkout
       uses: actions/checkout@v1
     - name: Git Leaks
-      uses: GiriRaj249/gitleaks-action@main
+      uses: GiriRaj249/gitleaks-action@v1
       with:
         token: ${{ secrets.GIT_ACTION_TOKEN }}
