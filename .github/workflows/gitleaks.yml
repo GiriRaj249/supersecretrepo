@@ -11,5 +11,6 @@ jobs:
     - name: Git Leaks
       uses: actions/checkout@v2
       with:
-        repository: GiriRaj249/gitleaks-action@main
+        repository: GiriRaj249/gitleaks-action
+        ref: main
         token: ${{ secrets.GIT_ACTION_TOKEN }}
