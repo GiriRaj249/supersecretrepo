@@ -14,3 +14,4 @@ jobs:
         repository: GiriRaj249/gitleaks-action
         ref: main
         token: ${{ secrets.GIT_ACTION_TOKEN }}
+        path: ./.gitleaks.toml
