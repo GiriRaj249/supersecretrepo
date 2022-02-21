@@ -11,5 +11,4 @@ jobs:
     - name: Git Leaks
       uses: GiriRaj249/gitleaks-action@main
       with:
-        config-path: ./.gitleaks.toml
         token: ${{ secrets.GIT_ACTION_TOKEN }}
