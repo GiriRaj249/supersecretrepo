@@ -9,7 +9,7 @@ jobs:
     - name: Code Checkout
       uses: actions/checkout@v1
     - name: gitleaks-action
-      uses: GiriRaj249/gitleaks-action@master
+      uses: GiriRaj249/gitleaks-action@main
       with:
         repository: GiriRaj249/gitleaks-action
         ref: master
