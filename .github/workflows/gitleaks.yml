@@ -1,0 +1,18 @@
+name: gitleaks
+
+on: [push,pull_request]
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Code Checkout
+      uses: actions/checkout@v1
+    - name: gitleaks-action
+      uses: GiriRaj249/gitleaks-action@master
+      with:
+        repository: GiriRaj249/gitleaks-action
+        ref: master
+        token: ${{ secrets.GIT_ACTION_TOKEN }}
+        
+      
