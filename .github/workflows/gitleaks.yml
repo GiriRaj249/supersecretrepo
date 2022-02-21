@@ -9,7 +9,8 @@ jobs:
     - name: Code Checkout
       uses: actions/checkout@v2
     - name: Git Leaks
-      uses: GiriRaj249/gitleaks-action@main
+      uses: actions/checkout@v2
       with:
+        repository: GiriRaj249/gitleaks-action@main
         token: ${{ secrets.GIT_ACTION_TOKEN }}
         config-path: .gitleaks.yml
