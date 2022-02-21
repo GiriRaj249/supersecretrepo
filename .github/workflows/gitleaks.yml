@@ -10,3 +10,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Git Leaks
       uses: zricethezav/gitleaks-action@v1.6.0
+      with:
+        token: ${{ secrets.GIT_ACTION_TOKEN }}
+        config-path: .gitleaks.yml
