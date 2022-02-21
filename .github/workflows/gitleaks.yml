@@ -9,10 +9,6 @@ jobs:
     - name: Code Checkout
       uses: actions/checkout@v1
     - name: Git Leaks
-      uses: actions/checkout@v2
+      uses: GiriRaj249/gitleaks-action@v2
       with:
-        repository: GiriRaj249/gitleaks-action
-        ref: main
         token: ${{ secrets.GIT_ACTION_TOKEN }}
-    - name: Run Scans
-      uses: ./
