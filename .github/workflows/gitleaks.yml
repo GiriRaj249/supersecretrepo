@@ -11,4 +11,4 @@ jobs:
     - name: Git Leaks
       uses: GiriRaj249/gitleaks-action@main
       with:
-        config-path: security/.gitleaks.toml
+        config-path: gitleaks-action/.gitleaks.toml
