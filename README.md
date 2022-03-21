@@ -1,3 +1,2 @@
 # supersecretrepo
-hello
-123
+ aws = "AKIAIMNOJVGFDXXXE4OA"
