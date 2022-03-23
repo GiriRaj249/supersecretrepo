@@ -1,14 +1,24 @@
 name: gitleaks
-
-on: [push,pull_request]
-
+on:
+  pull_request:
+    branches: 
+      - master
+  push:
+    branches: 
+      - master
 jobs:
   gitleaks:
     runs-on: ubuntu-latest
     steps:
-    - name: Code Checkout
-      uses: actions/checkout@v1
-    - name: Git Leaks
-      uses: GiriRaj249/gitleaks-action@main
+    - name: Code checkout
+      uses: actions/checkout@v2
       with:
-        config-path: gitleaks-action/.gitleaks.toml
+        fetch-depth: '0'  
+    - name: gitleaks-action checkout(private)
+      uses: actions/checkout@v2
+      with:
+        repository: GiriRaj249/gitleaks-action
+        ref: master 
+        path: ./gitleaksaction
+    - name: run gitleaks action
+      uses: ./gitleaksaction
