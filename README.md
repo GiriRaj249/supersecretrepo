@@ -13,3 +13,4 @@
  aws = "aKIiAHDJDUJDCDJJ3B"
 
 password
+aws = "AKIAIMNOJVGFDXXXE4OA"
