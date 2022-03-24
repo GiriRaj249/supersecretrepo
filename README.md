@@ -2,4 +2,4 @@
 
 
 password
-aws = AKIAIMNOJVGFDXXXE4OA
+aws = 
