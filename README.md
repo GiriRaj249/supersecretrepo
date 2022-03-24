@@ -2,4 +2,4 @@
 
 
 password
-aws = 
+aws = hi test is good
