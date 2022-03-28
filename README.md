@@ -2,4 +2,4 @@
 
 
 password
-aws = hi test is good hol
+aws = hi test is good hole
