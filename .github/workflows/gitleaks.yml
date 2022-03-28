@@ -21,7 +21,7 @@ jobs:
       with:
         repository: GiriRaj249/gitleaks-action
         ref: main
-        token: ${{secrets.GIT_TOKEN}}
+        token: ${{ secrets.GIT_TOKEN }}
         path: ./action
     - name: run git actions
       uses: ./action
