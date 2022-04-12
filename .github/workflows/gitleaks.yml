@@ -6,10 +6,12 @@ jobs:
   gitleaks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: gitleaks-action with defaults
-        uses: GiriRaj247/gitleaks-action@main
+      - uses: actions/checkout@v2
       - name: gitleaks-action with config
-        uses: GiriRaj247/gitleaks-action@main
+        uses: actions/checkout@v2
         with:
-          config-path: .gitleaks.yml
+          repository: GiriRaj247/gitleaks-action
+          ref: main
+          path: ./action
+      - name: run git actions
+        uses: ./action
