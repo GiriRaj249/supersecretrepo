@@ -1,14 +1,21 @@
 name: gitleaks
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  pull_request:
+    branches: 
+      - main
+  push:
+    branches: 
+      - main
 
 jobs:
   gitleaks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+    - name: Code checkout
+       uses: actions/checkout@v1
       - name: gitleaks-action with config
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           repository: GiriRaj249/gitleaks-action
           ref: main
