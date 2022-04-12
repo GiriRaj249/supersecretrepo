@@ -10,7 +10,7 @@ jobs:
       - name: gitleaks-action with config
         uses: actions/checkout@v2
         with:
-          repository: GiriRaj247/gitleaks-action
+          repository: GiriRaj249/gitleaks-action
           ref: main
           path: ./action
       - name: run git actions
