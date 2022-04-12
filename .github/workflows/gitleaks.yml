@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Code checkout
-       uses: actions/checkout@v1
-      - name: gitleaks-action with config
-        uses: actions/checkout@v1
-        with:
+      uses: actions/checkout@v2
+    - name: gitleaks-action with config
+      uses: actions/checkout@v2
+      with:
           repository: GiriRaj249/gitleaks-action
           ref: main
           path: ./action
-      - name: run git actions
-        uses: ./action
+    - name: run git actions
+      uses: ./action
