@@ -21,3 +21,4 @@ AKIAIOSFODNN7EXAMPLE
 AKIAIOSFODNN7EXAMPLE
 AKIAIOSFODNN7EXAMPLE
 hello
+twitter_url?: NullableStringFieldUpdateOperationsInp
