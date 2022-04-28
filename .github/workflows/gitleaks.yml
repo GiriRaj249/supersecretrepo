@@ -19,4 +19,4 @@ jobs:
       - name: run git actions
         uses: ./action
       - name: run git actions
-      uses: ./action
+        uses: ./action
