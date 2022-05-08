@@ -1,7 +1,7 @@
 # supersecretrepo
 
 
-password
+password is
 aws = hi test is good hole
 PASS = AKIAIOSFODNN7EXAMPLE
 AKIAIOSFODNN7EXAMPLE
