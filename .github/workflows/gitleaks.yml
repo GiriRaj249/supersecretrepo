@@ -3,6 +3,7 @@ name: gitleaks
 on: [push, pull_request, workflow_dispatch]
   branches:
     - test
+    - main
 jobs:
   gitleaks:
     runs-on: ubuntu-latest
