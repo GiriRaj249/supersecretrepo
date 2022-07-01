@@ -4,6 +4,7 @@
 password is worst
 aws = hi test is good hole
 PASS = AKIAIOSFODNN7EXAMPLE
+aws = hi test is good hole
 AKIAIOSFODNN7EXAMPLE
 AKIAIOSFODNN7EXAMPLE
 AKIAIOSFODNN7EXAMPLE
