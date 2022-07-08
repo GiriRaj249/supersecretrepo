@@ -1,6 +1,8 @@
 name: gitleaks
 
 on: [push, pull_request, workflow_dispatch]
+  branches-ignore:
+    - main
 
 jobs:
   gitleaks:
