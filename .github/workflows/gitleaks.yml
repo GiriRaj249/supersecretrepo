@@ -2,9 +2,7 @@ name: gitleaks
 
 on: [push, pull_request, workflow_dispatch]
   branches:
-    - '*'         # matches every branch that doesn't contain a '/'
-    - '*/*'       # matches every branch containing a single '/'
-    - '**'        # matches every branch
+    - '*'  
 
 jobs:
   gitleaks:
