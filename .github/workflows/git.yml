@@ -1,0 +1,28 @@
+name: gitleaks
+
+on:
+  push:
+    branches:    
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gitleaks-action with defaults
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      - name: gitleaks-action with config
+        uses: actions/checkout@v2
+        with:
+          repository: GiriRaj249/gitleaks-actio
+          ref: main
+          path: ./action
+      - name: run git actions
+        uses: ./action
+      - name: run git actions
+        uses: ./action
