@@ -1,7 +1,7 @@
 # supersecretrepo
 
 
-password is worst
+password is worst hello
 aws = hi test is good hole
 PASS = AKIAIOSFODNN7EXAMPLE
 aws = hi test is good hole
