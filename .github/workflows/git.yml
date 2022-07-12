@@ -1,12 +1,12 @@
 name: gitleaks-2
 
 on:
+  pull_request:
+    branches: 
+      - '**'
   push:
-    branches:    
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*t*'       # matches every branch containing a single 't'
-      - '**'        # matches every branch
-      - '!master'   # excludes master
+    branches: 
+      - '**'
 
 jobs:
   gitleaks:
